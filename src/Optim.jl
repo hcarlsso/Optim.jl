@@ -120,6 +120,7 @@ export optimize, maximize, # main function
        ## Non-linear constraints
        IPNewton
 
+export ManifoldNewton
 
 include("types.jl") # types used throughout
 include("Manifolds.jl") # code to handle manifold constraints
@@ -213,4 +214,5 @@ include("multivariate/solvers/constrained/ipnewton/utilities/trace.jl")
 # Maximization convenience wrapper
 include("maximize.jl")
 
+include("multivariate/solvers/second_order/manifold_newton.jl")
 end
